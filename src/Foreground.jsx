@@ -24,22 +24,10 @@ const Foreground = () => {
     },
   ];
   const [Data, setData] = useState(data);
-  // useEffect(() => {
-  //   localStorage.setItem("mydata", JSON.stringify(Data));
-  // }, [Data]);
-  useEffect(() => {
-    const localData = localStorage.getItem("mydata");
-    setData(JSON.parse(localData));
-  }, []);
 
-  // const addData = (data) => {
-  //   setData([...Data, { ...data }]);
-  //   localStorage.setItem("mydata", JSON.stringify(Data));
-  // };
   const addData = (data) => {
     const updatedData = [...Data, { ...data }]; // Create the updated array first
     setData(updatedData); // Update the state
-    localStorage.setItem("mydata", JSON.stringify(updatedData)); // Update local storage
   };
   const ref = useRef();
   return (
