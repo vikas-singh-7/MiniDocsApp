@@ -1,0 +1,10 @@
+step 1 : background  // make a background component add it to our App
+step 2 : foreground  // make a foreground (simply a sheet over baclground ) and make its z index more than backgriund so that it can display over backgrund 
+> add cards in foreground 
+step 3 : make a card component and add it to our foreground component
+
+step 4 card make and now think what data should card display ? 
+
+make that data ... like icons , description , file size , close or downlaod 
+step 5 map the data and pass the data in card component as map will render card compo and will also get props as item 
+step 6 now use framermotion library for drag efec and thats it 
