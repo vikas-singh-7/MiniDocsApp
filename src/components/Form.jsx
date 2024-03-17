@@ -25,7 +25,7 @@ const Form = ({ addData }) => {
     setSize("");
   }
   return (
-    <div className=" fixed w-[24rem] h-[35rem] rounded-[45px] bg-zinc-900/90 text-white py-10 px-8 left-[70rem] flex justify-center flex-wrap flex-col">
+    <div className="w-[22rem] h-[34rem] rounded-[45px] bg-zinc-900/90 text-white py-10 px-8 left-[70rem] flex justify-center flex-wrap flex-col">
       <form action="" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5 px-1 py-4">
           <h1 className="text-2xl">Want to add your quotes.. Go ahead</h1>

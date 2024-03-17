@@ -32,17 +32,14 @@ const Foreground = () => {
   const ref = useRef();
   return (
     <div>
-      <div className="w-full h-full fixed top-0 left-0 z-[3] m-1 flex flex-wrap gap-5 p-5">
-        <div
-          ref={ref}
-          className="w-[70vw] h-full fixed top-0 left-0 z-[4] m-1 flex flex-wrap gap-5 p-5"
-        >
-          {" "}
-          {Data.map((item) => {
-            return <Card reference={ref} key={item.desc} data={item} />;
-          })}
-          <Form addData={addData} />
-        </div>
+      <div
+        ref={ref}
+        className="h-screen w-full z-[3] relative flex justify-evenly flex-wrap"
+      >
+        {Data.map((item) => {
+          return <Card reference={ref} key={item.desc} data={item} />;
+        })}
+        <Form addData={addData} />
       </div>
     </div>
   );
